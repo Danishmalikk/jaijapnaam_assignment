@@ -11,7 +11,7 @@ const connectDb = require('./config/db')
 
 //middlewares
 dotenv.config()
-app.use(cors({origin: "https://jaijapnaam-assignment-jof2.vercel.app/",}))
+app.use(cors({origin: "https://jaijapnaam-assignment-jof2.vercel.app",   credentials: true}))
 app.use(express.json())
 app.use(cookieParser())
 
