@@ -6,7 +6,6 @@ const generateToken = require("../utils/jwt")
 const getUser = async (req, res)=> { 
     try {
         const data = await User.find()
-        console.log("data", data)
         if(!data || data.length ===0) { 
             return res.status(404).json({status : 404, message : "user does not exists"})
         }
