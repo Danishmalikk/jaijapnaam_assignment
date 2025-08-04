@@ -109,7 +109,7 @@ const handleDelete = async (id) => {
           </div>
           <button
             onClick={handleAdd}
-            className="bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600 transition"
+            className="bg-green-500 text-white px-6 py-2 mt-3 rounded hover:bg-green-600 transition"
           >
             Add Item
           </button>
@@ -149,7 +149,7 @@ const handleDelete = async (id) => {
         )}
 
         {/* Item List */}
-        <div className="border-t mt-8 pt-6">
+        <div className=" mt-8 pt-6">
           <h3 className="text-xl font-semibold mb-4">Items List</h3>
           {items.length === 0 ? (
             <p className="text-gray-600">No items available.</p>
